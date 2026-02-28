@@ -1901,34 +1901,231 @@ code, .mono {
   to   { opacity: 1; transform: scale(1) translateY(0); }
 }
 
-/* ── Slide 10 — Synced Editor + Chat Timings ─────────────────── */
-.slide[data-slide="10"].active .code-line.writing.cw-1  { animation-delay: 1.5s; }
-.slide[data-slide="10"].active .code-line.writing.cw-2  { animation-delay: 1.65s; }
-.slide[data-slide="10"].active .code-line.writing.cw-3  { animation-delay: 1.8s; }
-.slide[data-slide="10"].active .code-line.writing.cw-4  { animation-delay: 1.95s; }
-.slide[data-slide="10"].active .code-line.writing.cw-5  { animation-delay: 2.1s; }
-.slide[data-slide="10"].active .code-line.writing.cw-6  { animation-delay: 2.3s; }
-.slide[data-slide="10"].active .code-line.writing.cw-7  { animation-delay: 2.45s; }
-.slide[data-slide="10"].active .code-line.writing.cw-8  { animation-delay: 2.6s; }
-.slide[data-slide="10"].active .code-line.writing.cw-9  { animation-delay: 2.75s; }
-.slide[data-slide="10"].active .code-line.writing.cw-10 { animation-delay: 2.9s; }
-.slide[data-slide="10"].active .code-line.writing.cw-11 { animation-delay: 3.05s; }
-.slide[data-slide="10"].active .code-line.writing.cw-12 { animation-delay: 3.2s; }
-.slide[data-slide="10"].active .code-line.writing.cw-13 { animation-delay: 3.35s; }
-.slide[data-slide="10"].active .code-line.writing.cw-14 { animation-delay: 3.5s; }
-.slide[data-slide="10"].active .code-line.writing.cw-15 { animation-delay: 4.0s; }
-.slide[data-slide="10"].active .code-line.writing.cw-16 { animation-delay: 4.15s; }
-.slide[data-slide="10"].active .code-line.writing.cw-17 { animation-delay: 4.3s; }
-.slide[data-slide="10"].active .code-line.writing.cw-18 { animation-delay: 4.45s; }
-.slide[data-slide="10"].active .code-line.writing.cw-19 { animation-delay: 4.7s; }
-.slide[data-slide="10"].active .code-line.writing.cw-20 { animation-delay: 4.85s; }
-.slide[data-slide="10"].active .code-line.writing.cw-21 { animation-delay: 5.0s; }
-.slide[data-slide="10"].active .code-line.writing.cw-22 { animation-delay: 5.15s; }
+/* ── Slide 9 — Synced Editor + Chat Timings ─────────────────── */
+.slide[data-slide="9"].active .code-line.writing.cw-1  { animation-delay: 1.5s; }
+.slide[data-slide="9"].active .code-line.writing.cw-2  { animation-delay: 1.65s; }
+.slide[data-slide="9"].active .code-line.writing.cw-3  { animation-delay: 1.8s; }
+.slide[data-slide="9"].active .code-line.writing.cw-4  { animation-delay: 1.95s; }
+.slide[data-slide="9"].active .code-line.writing.cw-5  { animation-delay: 2.1s; }
+.slide[data-slide="9"].active .code-line.writing.cw-6  { animation-delay: 2.3s; }
+.slide[data-slide="9"].active .code-line.writing.cw-7  { animation-delay: 2.45s; }
+.slide[data-slide="9"].active .code-line.writing.cw-8  { animation-delay: 2.6s; }
+.slide[data-slide="9"].active .code-line.writing.cw-9  { animation-delay: 2.75s; }
+.slide[data-slide="9"].active .code-line.writing.cw-10 { animation-delay: 2.9s; }
+.slide[data-slide="9"].active .code-line.writing.cw-11 { animation-delay: 3.05s; }
+.slide[data-slide="9"].active .code-line.writing.cw-12 { animation-delay: 3.2s; }
+.slide[data-slide="9"].active .code-line.writing.cw-13 { animation-delay: 3.35s; }
+.slide[data-slide="9"].active .code-line.writing.cw-14 { animation-delay: 3.5s; }
+.slide[data-slide="9"].active .code-line.writing.cw-15 { animation-delay: 4.0s; }
+.slide[data-slide="9"].active .code-line.writing.cw-16 { animation-delay: 4.15s; }
+.slide[data-slide="9"].active .code-line.writing.cw-17 { animation-delay: 4.3s; }
+.slide[data-slide="9"].active .code-line.writing.cw-18 { animation-delay: 4.45s; }
+.slide[data-slide="9"].active .code-line.writing.cw-19 { animation-delay: 4.7s; }
+.slide[data-slide="9"].active .code-line.writing.cw-20 { animation-delay: 4.85s; }
+.slide[data-slide="9"].active .code-line.writing.cw-21 { animation-delay: 5.0s; }
+.slide[data-slide="9"].active .code-line.writing.cw-22 { animation-delay: 5.15s; }
 
-.slide[data-slide="10"].active .chat-msg.msg-anim.ma-1 { animation-delay: 0.5s; }
-.slide[data-slide="10"].active .chat-msg.msg-anim.ma-2 { animation-delay: 1.2s; }
-.slide[data-slide="10"].active .chat-msg.msg-anim.ma-3 { animation-delay: 3.8s; }
-.slide[data-slide="10"].active .chat-msg.msg-anim.ma-4 { animation-delay: 5.5s; }
+.slide[data-slide="9"].active .chat-msg.msg-anim.ma-1 { animation-delay: 0.5s; }
+.slide[data-slide="9"].active .chat-msg.msg-anim.ma-2 { animation-delay: 1.2s; }
+.slide[data-slide="9"].active .chat-msg.msg-anim.ma-3 { animation-delay: 3.8s; }
+.slide[data-slide="9"].active .chat-msg.msg-anim.ma-4 { animation-delay: 5.5s; }
+
+/* ── VS Code Choreography — Global Entrance ───────────────────── */
+
+/* --- Initial hidden states (any .vsc-choreo mockup) --- */
+.vsc-choreo .vscode-activity-bar .act-icon {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+.vsc-choreo .vscode-sidebar > div {
+  opacity: 0;
+  transform: translateX(-12px);
+}
+.vsc-choreo .vscode-tabs {
+  opacity: 0;
+  transform: translateX(8px);
+}
+.vsc-choreo .vscode-breadcrumb {
+  opacity: 0;
+}
+.vsc-choreo .vscode-editor {
+  clip-path: inset(0 0 100% 0);
+}
+.vsc-choreo .vscode-statusbar {
+  opacity: 0;
+  transform: translateY(4px);
+}
+.vsc-choreo .chat-panel {
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+/* --- Keyframes --- */
+@keyframes estIconIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes estSideIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes estTabIn {
+  from { opacity: 0; transform: translateX(8px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes estEditorReveal {
+  from { clip-path: inset(0 0 100% 0); }
+  to   { clip-path: inset(0 0 0% 0); }
+}
+@keyframes estStatusUp {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes estFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes estCursorBlink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+@keyframes estScanLine {
+  0%   { top: 0%; opacity: 0; }
+  5%   { opacity: 1; }
+  95%  { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+@keyframes chatFadeIn {
+  from { transform: translateX(30px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+@keyframes estChatPush {
+  from { margin-right: -340px; transform: translateX(340px); opacity: 0; }
+  15%  { opacity: 1; }
+  to   { margin-right: 0; transform: translateX(0); opacity: 1; }
+}
+
+/* --- Base fast choreography (all VS Code slides) --- */
+.slide.active .vsc-choreo .act-icon:nth-child(1) { animation: estIconIn 0.35s var(--ease-expo) 0.15s forwards; }
+.slide.active .vsc-choreo .act-icon:nth-child(2) { animation: estIconIn 0.35s var(--ease-expo) 0.22s forwards; }
+.slide.active .vsc-choreo .act-icon:nth-child(3) { animation: estIconIn 0.35s var(--ease-expo) 0.29s forwards; }
+.slide.active .vsc-choreo .act-icon:nth-child(4) { animation: estIconIn 0.35s var(--ease-expo) 0.36s forwards; }
+.slide.active .vsc-choreo .act-icon:nth-child(6) { animation: estIconIn 0.35s var(--ease-expo) 0.50s forwards; }
+
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(1)  { animation: estSideIn 0.3s var(--ease-expo) 0.18s forwards; }
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(2)  { animation: estSideIn 0.3s var(--ease-expo) 0.22s forwards; }
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(3)  { animation: estSideIn 0.3s var(--ease-expo) 0.26s forwards; }
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(4)  { animation: estSideIn 0.3s var(--ease-expo) 0.30s forwards; }
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(5)  { animation: estSideIn 0.3s var(--ease-expo) 0.34s forwards; }
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(6)  { animation: estSideIn 0.3s var(--ease-expo) 0.38s forwards; }
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(7)  { animation: estSideIn 0.3s var(--ease-expo) 0.42s forwards; }
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(8)  { animation: estSideIn 0.3s var(--ease-expo) 0.46s forwards; }
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(9)  { animation: estSideIn 0.3s var(--ease-expo) 0.50s forwards; }
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(10) { animation: estSideIn 0.3s var(--ease-expo) 0.54s forwards; }
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(11) { animation: estSideIn 0.3s var(--ease-expo) 0.58s forwards; }
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(12) { animation: estSideIn 0.3s var(--ease-expo) 0.62s forwards; }
+.slide.active .vsc-choreo .vscode-sidebar > div:nth-child(13) { animation: estSideIn 0.3s var(--ease-expo) 0.66s forwards; }
+
+.slide.active .vsc-choreo .vscode-tabs       { animation: estTabIn  0.4s var(--ease-expo) 0.20s forwards; }
+.slide.active .vsc-choreo .vscode-breadcrumb  { animation: estFadeIn 0.35s ease           0.30s forwards; }
+.slide.active .vsc-choreo .vscode-editor      { animation: estEditorReveal 0.7s var(--ease-expo) 0.25s forwards; }
+.slide.active .vsc-choreo .vscode-statusbar   { animation: estStatusUp 0.35s var(--ease-expo) 0.55s forwards; }
+.slide.active .vsc-choreo .chat-panel         { animation: chatFadeIn 0.45s var(--ease-expo) 0.40s forwards; }
+
+/* --- Establishing shot overrides (slide 2 — slow, cinematic) --- */
+.slide[data-slide="2"].active .vsc-choreo .act-icon:nth-child(1) { animation: estIconIn 0.4s var(--ease-expo) 0.35s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .act-icon:nth-child(2) { animation: estIconIn 0.4s var(--ease-expo) 0.45s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .act-icon:nth-child(3) { animation: estIconIn 0.4s var(--ease-expo) 0.55s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .act-icon:nth-child(4) { animation: estIconIn 0.4s var(--ease-expo) 0.65s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .act-icon:nth-child(6) { animation: estIconIn 0.4s var(--ease-expo) 0.85s forwards; }
+
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(1)  { animation: estSideIn 0.35s var(--ease-expo) 0.40s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(2)  { animation: estSideIn 0.35s var(--ease-expo) 0.46s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(3)  { animation: estSideIn 0.35s var(--ease-expo) 0.52s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(4)  { animation: estSideIn 0.35s var(--ease-expo) 0.58s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(5)  { animation: estSideIn 0.35s var(--ease-expo) 0.64s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(6)  { animation: estSideIn 0.35s var(--ease-expo) 0.70s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(7)  { animation: estSideIn 0.35s var(--ease-expo) 0.76s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(8)  { animation: estSideIn 0.35s var(--ease-expo) 0.82s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(9)  { animation: estSideIn 0.35s var(--ease-expo) 0.88s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(10) { animation: estSideIn 0.35s var(--ease-expo) 0.94s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(11) { animation: estSideIn 0.35s var(--ease-expo) 1.00s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(12) { animation: estSideIn 0.35s var(--ease-expo) 1.06s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-sidebar > div:nth-child(13) { animation: estSideIn 0.35s var(--ease-expo) 1.12s forwards; }
+
+.slide[data-slide="2"].active .vsc-choreo .vscode-tabs       { animation: estTabIn  0.45s var(--ease-expo) 0.50s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-breadcrumb  { animation: estFadeIn 0.40s ease           0.65s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-editor      { animation: estEditorReveal 1.0s var(--ease-expo) 0.60s forwards; }
+.slide[data-slide="2"].active .vsc-choreo .vscode-statusbar   { animation: estStatusUp 0.4s var(--ease-expo) 1.20s forwards; }
+
+/* Slide 2: Chat panel push-in from right (VS Code opening chat) */
+.slide[data-slide="2"] .vsc-choreo .chat-panel {
+  margin-right: -340px;
+  transform: translateX(340px);
+  opacity: 0;
+}
+.slide[data-slide="2"].active .vsc-choreo .chat-panel { animation: estChatPush 0.8s var(--ease-expo) 2.5s forwards; }
+
+/* --- Scan line sweep (slide 2 only) --- */
+[data-slide="2"] .vscode-editor::after {
+  content: '';
+  position: absolute;
+  left: 40px; right: 56px;
+  top: 0;
+  height: 26px;
+  background: linear-gradient(180deg, transparent 0%, rgba(191,90,242,0.07) 40%, rgba(191,90,242,0.07) 60%, transparent 100%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 5;
+  border-radius: 2px;
+}
+.slide[data-slide="2"].active .vscode-editor::after {
+  animation: estScanLine 2s ease 1.3s;
+}
+
+/* --- Cursor blink + active line (slide 2 only) --- */
+.est-cursor {
+  display: inline-block;
+  width: 1.5px;
+  height: 15px;
+  background: rgba(255,255,255,0.85);
+  vertical-align: text-bottom;
+  opacity: 0;
+  margin-left: 1px;
+}
+.slide[data-slide="2"].active .est-cursor {
+  animation: estFadeIn 0.01s ease 1.6s forwards, estCursorBlink 1s step-end 1.6s infinite;
+}
+.est-active-line {
+  background: rgba(255,255,255,0.03);
+  position: relative;
+}
+.est-active-line::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: var(--purple);
+  opacity: 0;
+}
+.slide[data-slide="2"].active .est-active-line::before {
+  animation: estFadeIn 0.3s ease 1.6s forwards;
+}
+
+/* --- Slide 2 — combined chat/explore timing overrides --- */
+.slide[data-slide="2"].active .chat-msg.msg-anim.ma-1 { animation-delay: 3.0s; }
+.slide[data-slide="2"].active .chat-msg.msg-anim.ma-2 { animation-delay: 3.5s; }
+.slide[data-slide="2"].active .chat-msg.msg-anim.ma-3 { animation-delay: 4.2s; }
+.slide[data-slide="2"].active .chat-msg.msg-anim.ma-4 { animation-delay: 4.8s; }
+.slide[data-slide="2"].active .chat-msg.msg-anim.ma-5 { animation-delay: 5.3s; }
+.slide[data-slide="2"].active .chat-msg.msg-anim.ma-6 { animation-delay: 5.8s; }
+.slide[data-slide="2"].active .chat-msg.msg-anim.ma-7 { animation-delay: 6.3s; }
+
+.slide[data-slide="2"].active .vscode-file.explore-anim.ef-1 { animation-delay: 4.2s; }
+.slide[data-slide="2"].active .vscode-file.explore-anim.ef-2 { animation-delay: 4.8s; }
+.slide[data-slide="2"].active .vscode-file.explore-anim.ef-3 { animation-delay: 5.3s; }
+.slide[data-slide="2"].active .vscode-file.explore-anim.ef-4 { animation-delay: 5.8s; }
+.slide[data-slide="2"].active .vscode-file.explore-anim.ef-5 { animation-delay: 6.3s; }
 
 /* ── Xcode 23 — Test Report View ─────────────────────────────── */
 .xc23-report {
@@ -2572,7 +2769,7 @@ code, .mono {
   <div class="bar" id="progressFill" style="width: 0%"></div>
 </div>
 
-<div class="slide-counter" id="slideCounter">1 / 14</div>
+<div class="slide-counter" id="slideCounter">1 / 13</div>
 <div class="presenter-timer" id="presenterTimer">00:00</div>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
@@ -2599,10 +2796,10 @@ code, .mono {
     </div>
   </section>
 
-  <!-- ── Slide 2: The Project — Establishing Shot ──────── -->
+  <!-- ── Slide 2: The Project + The Ask ──────────────────── -->
   <section class="slide" data-scene="1" data-slide="2"
            data-title="The Project"
-           data-notes="'Here's a real Swift backend. ResourceBookingBackend. Production code, clean architecture.' Pause. Let the VS Code window land. 'You need tests. So you do what everyone does now — you ask the agent.'">
+           data-notes="'Here's a real Swift backend. ResourceBookingBackend. Production code, clean architecture.' Pause. Let the VS Code window land. 'You need tests. So you do what everyone does now — you ask the agent.' Chat panel pushes in. Agent reads files, explores codebase.">
     <div class="slide-content">
       <div class="mac-window wide animate-on-enter">
         <div class="window-titlebar">
@@ -2614,7 +2811,7 @@ code, .mono {
           <span class="window-title">Visual Studio Code — ResourceBookingBackend</span>
         </div>
         <div class="window-content">
-          <div class="vscode-mockup">
+          <div class="vscode-mockup vsc-choreo">
 
             <!-- Activity Bar -->
             <div class="vscode-activity-bar">
@@ -2637,28 +2834,29 @@ code, .mono {
               </div>
             </div>
 
-            <!-- Sidebar -->
+            <!-- Sidebar with explore-anim files -->
             <div class="vscode-sidebar">
               <div class="vscode-sidebar-header">Explorer <span style="opacity:0.4">⋯</span></div>
               <div class="vscode-sidebar-section open">RESOURCEBOOKINGBACKEND</div>
               <div class="vscode-file indent-1"><span class="file-icon folder">📂</span><span class="file-name">Sources/</span></div>
-              <div class="vscode-file indent-2 active" style="color:#fff"><span class="file-icon swift">◆</span><span class="file-name">ResourceManager.sw…</span></div>
-              <div class="vscode-file indent-2"><span class="file-icon swift">◆</span><span class="file-name">BookingService.swi…</span></div>
-              <div class="vscode-file indent-2"><span class="file-icon swift">◆</span><span class="file-name">AvailabilityCheck…</span></div>
+              <div class="vscode-file indent-2 active explore-anim ef-1" style="color:#fff"><span class="file-icon swift">◆</span><span class="file-name">ResourceManager.sw…</span></div>
+              <div class="vscode-file indent-2 explore-anim ef-2"><span class="file-icon swift">◆</span><span class="file-name">BookingService.swi…</span></div>
+              <div class="vscode-file indent-2 explore-anim ef-3"><span class="file-icon swift">◆</span><span class="file-name">AvailabilityCheck…</span></div>
               <div class="vscode-file indent-1"><span class="file-icon folder">📂</span><span class="file-name">Models/</span></div>
-              <div class="vscode-file indent-2"><span class="file-icon swift">◆</span><span class="file-name">Booking.swift</span></div>
-              <div class="vscode-file indent-2"><span class="file-icon swift">◆</span><span class="file-name">Resource.swift</span></div>
+              <div class="vscode-file indent-2 explore-anim ef-4"><span class="file-icon swift">◆</span><span class="file-name">Booking.swift</span></div>
+              <div class="vscode-file indent-2 explore-anim ef-5"><span class="file-icon swift">◆</span><span class="file-name">Resource.swift</span></div>
               <div class="vscode-file indent-2"><span class="file-icon swift">◆</span><span class="file-name">TimeSlot.swift</span></div>
               <div class="vscode-file indent-1"><span class="file-icon folder">📂</span><span class="file-name">Tests/</span></div>
               <div class="vscode-file indent-2" style="opacity:0.4"><span class="file-icon" style="color:#666">📄</span><span class="file-name" style="color:#666;font-style:italic">(empty)</span></div>
               <div class="vscode-file indent-1"><span class="file-icon md" style="color:#519ABA">▤</span><span class="file-name">Package.swift</span></div>
             </div>
 
-            <!-- Editor — Clean production code (no chat panel) -->
-            <div class="vscode-main" style="flex:1">
+            <!-- Editor — Clean production code -->
+            <div class="vscode-main">
               <div class="vscode-tabs">
                 <div class="vscode-tab active"><span style="color:#FF6839">◆</span> ResourceManager.swift <span class="tab-close">×</span></div>
                 <div class="vscode-tab"><span style="color:#FF6839">◆</span> BookingService.swift <span class="tab-close">×</span></div>
+                <div class="vscode-tab"><span style="color:#519ABA">▤</span> Package.swift <span class="tab-close">×</span></div>
               </div>
               <div class="vscode-breadcrumb">
                 ResourceBookingBackend <span>›</span> Sources <span>›</span> <span style="color:rgba(255,255,255,0.65)">ResourceManager.swift</span>
@@ -2686,7 +2884,7 @@ code, .mono {
                 <div class="code-line"><span class="line-gutter">20</span><span class="line-code">        <span class="syn-param">for date</span>: <span class="syn-type">Date</span>,</span></div>
                 <div class="code-line"><span class="line-gutter">21</span><span class="line-code">        <span class="syn-param">location</span>: <span class="syn-type">Location</span></span></div>
                 <div class="code-line"><span class="line-gutter">22</span><span class="line-code">    ) <span class="syn-kw">async throws</span> → [<span class="syn-type">Resource</span>] {</span></div>
-                <div class="code-line"><span class="line-gutter">23</span><span class="line-code">        logger.<span class="syn-fn">info</span>(<span class="syn-str">"Fetching resources…"</span>)</span></div>
+                <div class="code-line est-active-line"><span class="line-gutter">23</span><span class="line-code">        logger.<span class="syn-fn">info</span>(<span class="syn-str">"Fetching resources…"</span>)<span class="est-cursor"></span></span></div>
                 <div class="code-line"><span class="line-gutter">24</span><span class="line-code">        <span class="syn-kw">if let</span> cached = <span class="syn-kw">try await</span> cache.<span class="syn-fn">get</span>(date, location) {</span></div>
                 <div class="code-line"><span class="line-gutter">25</span><span class="line-code">            <span class="syn-kw">return</span> cached</span></div>
                 <div class="code-line"><span class="line-gutter">26</span><span class="line-code">        }</span></div>
@@ -2709,109 +2907,7 @@ code, .mono {
               </div>
             </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Slide 3: The Ask → Agent Explores ────────────── -->
-  <section class="slide" data-scene="1" data-slide="3"
-           data-title="The Ask"
-           data-notes="'You open VS Code, type one request — write unit tests. The agent starts working, exploring your codebase...' Point to files lighting up. 'It reads source files, checks structure, tries to understand context.' Pause. 'But there's a problem.'"
-    <div class="slide-content">
-      <div class="mac-window wide animate-on-enter">
-        <div class="window-titlebar">
-          <div class="traffic-lights">
-            <div class="traffic-light tl-red"></div>
-            <div class="traffic-light tl-yellow"></div>
-            <div class="traffic-light tl-green"></div>
-          </div>
-          <span class="window-title">Visual Studio Code — ResourceBookingBackend</span>
-        </div>
-        <div class="window-content">
-          <div class="vscode-mockup">
-
-            <!-- Activity Bar — SVG Icons -->
-            <div class="vscode-activity-bar">
-              <div class="act-icon active" title="Explorer">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
-              </div>
-              <div class="act-icon" title="Search">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-              </div>
-              <div class="act-icon" title="Source Control">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg>
-                <span class="icon-badge">3</span>
-              </div>
-              <div class="act-icon" title="Extensions">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-              </div>
-              <div style="flex:1"></div>
-              <div class="act-icon" title="Copilot Chat" style="color:var(--purple);opacity:0.85">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.5 8.5L21 9.5L16 14L17.5 21L12 17.5L6.5 21L8 14L3 9.5L9.5 8.5L12 2Z"/></svg>
-              </div>
-            </div>
-
-            <!-- Sidebar with file scanning animation -->
-            <div class="vscode-sidebar">
-              <div class="vscode-sidebar-header">Explorer <span style="opacity:0.4">⋯</span></div>
-              <div class="vscode-sidebar-section open">RESOURCEBOOKINGBACKEND</div>
-              <div class="vscode-file indent-1"><span class="file-icon folder">📂</span><span class="file-name">Sources/</span></div>
-              <div class="vscode-file indent-2 explore-anim ef-1"><span class="file-icon swift">◆</span><span class="file-name">ResourceManager.sw…</span></div>
-              <div class="vscode-file indent-2 explore-anim ef-2"><span class="file-icon swift">◆</span><span class="file-name">BookingService.swi…</span></div>
-              <div class="vscode-file indent-2 explore-anim ef-3"><span class="file-icon swift">◆</span><span class="file-name">AuthController.swi…</span></div>
-              <div class="vscode-file indent-1"><span class="file-icon folder">📂</span><span class="file-name">Models/</span></div>
-              <div class="vscode-file indent-2 explore-anim ef-4"><span class="file-icon swift">◆</span><span class="file-name">Booking.swift</span></div>
-              <div class="vscode-file indent-2 explore-anim ef-5"><span class="file-icon swift">◆</span><span class="file-name">Resource.swift</span></div>
-              <div class="vscode-file indent-1"><span class="file-icon folder">📂</span><span class="file-name">Tests/</span></div>
-              <div class="vscode-file indent-2" style="color:var(--text-quaternary)"><span class="file-icon test">○</span><span class="file-name" style="font-style:italic">empty</span></div>
-              <div class="vscode-file indent-1"><span class="file-icon md" style="color:#519ABA">▤</span><span class="file-name">Package.swift</span></div>
-            </div>
-
-            <!-- Editor — shows file being read -->
-            <div class="vscode-main">
-              <div class="vscode-tabs">
-                <div class="vscode-tab active"><span style="color:#FF6839">◆</span> ResourceManager.swift <span class="tab-close">×</span></div>
-                <div class="vscode-tab"><span style="color:#FF6839">◆</span> BookingService.swift <span class="tab-close">×</span></div>
-                <div class="vscode-tab"><span style="color:#519ABA">▤</span> Package.swift <span class="tab-close">×</span></div>
-              </div>
-              <div class="vscode-breadcrumb">
-                ResourceBookingBackend <span>›</span> Sources <span>›</span> <span style="color:rgba(255,255,255,0.65)">ResourceManager.swift</span>
-              </div>
-              <div class="vscode-editor">
-                <div class="code-line"><span class="line-gutter">1</span><span class="line-code"><span class="syn-kw">import</span> <span class="syn-type">Foundation</span></span></div>
-                <div class="code-line"><span class="line-gutter">2</span><span class="line-code"><span class="syn-kw">import</span> <span class="syn-type">Vapor</span></span></div>
-                <div class="code-line"><span class="line-gutter">3</span><span class="line-code"></span></div>
-                <div class="code-line"><span class="line-gutter">4</span><span class="line-code"><span class="syn-cmt">/// Manages resource lifecycle — CRUD, availability, booking.</span></span></div>
-                <div class="code-line"><span class="line-gutter">5</span><span class="line-code"><span class="syn-kw">final class</span> <span class="syn-type">ResourceManager</span>: <span class="syn-type">Sendable</span> {</span></div>
-                <div class="code-line"><span class="line-gutter">6</span><span class="line-code">    <span class="syn-kw">private let</span> <span class="syn-param">repository</span>: <span class="syn-type">ResourceRepository</span></span></div>
-                <div class="code-line"><span class="line-gutter">7</span><span class="line-code">    <span class="syn-kw">private var</span> <span class="syn-param">resources</span>: [<span class="syn-type">Resource</span>.<span class="syn-type">ID</span>: <span class="syn-type">Resource</span>]</span></div>
-                <div class="code-line"><span class="line-gutter">8</span><span class="line-code"></span></div>
-                <div class="code-line current-line"><span class="line-gutter">9</span><span class="line-code">    <span class="syn-kw">init</span>(<span class="syn-param">repository</span>: <span class="syn-type">ResourceRepository</span>) {</span></div>
-                <div class="code-line"><span class="line-gutter">10</span><span class="line-code">        <span class="syn-kw">self</span>.<span class="syn-property">repository</span> = repository</span></div>
-                <div class="code-line"><span class="line-gutter">11</span><span class="line-code">        <span class="syn-kw">self</span>.<span class="syn-property">resources</span> = [:]</span></div>
-                <div class="code-line"><span class="line-gutter">12</span><span class="line-code">    }</span></div>
-                <div class="code-line"><span class="line-gutter">13</span><span class="line-code"></span></div>
-                <div class="code-line"><span class="line-gutter">14</span><span class="line-code">    <span class="syn-cmt">/// Fetches resources available for a given date.</span></span></div>
-                <div class="code-line"><span class="line-gutter">15</span><span class="line-code">    <span class="syn-kw">func</span> <span class="syn-fn">fetchAvailableResources</span>(</span></div>
-                <div class="code-line"><span class="line-gutter">16</span><span class="line-code">        <span class="syn-param">for date</span>: <span class="syn-type">Date</span>,</span></div>
-                <div class="code-line"><span class="line-gutter">17</span><span class="line-code">        <span class="syn-param">location</span>: <span class="syn-type">Location</span></span></div>
-                <div class="code-line"><span class="line-gutter">18</span><span class="line-code">    ) <span class="syn-kw">async throws</span> -> [<span class="syn-type">Resource</span>] {</span></div>
-                <div class="vscode-minimap"><div class="minimap-bar" style="height:90px"></div></div>
-              </div>
-              <div class="vscode-statusbar">
-                <span class="status-item">⎇ main</span>
-                <span class="status-item">Swift 6.0</span>
-                <div class="statusbar-right">
-                  <span class="status-item">Ln 9, Col 5</span>
-                  <span class="status-item">UTF-8</span>
-                  <span class="status-item" style="color:var(--purple)">✦ Copilot — reading files…</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Chat Panel — Ask + Explore combined -->
+            <!-- Chat Panel — Ask + Agent Explores -->
             <div class="chat-panel">
               <div class="chat-header">
                 <span style="color:var(--purple);font-size:14px">✦</span> GitHub Copilot
@@ -2845,8 +2941,8 @@ code, .mono {
     </div>
   </section>
 
-  <!-- ── Slide 4: Agent Writes Tests (Wrong) ────────────── -->
-  <section class="slide" data-scene="1" data-slide="4"
+  <!-- ── Slide 3: Agent Writes Tests (Wrong) ────────────── -->
+  <section class="slide" data-scene="1" data-slide="3"
            data-title="Agent Writes"
            data-notes="'And it writes tests.' Pause. Let the code animate in line by line. 'But look. Look at line 1.' Point to XCTest. 'It used XCTest. Not Swift Testing. It didn't know your standards.' The chat explodes with corrections. 'And so it begins.'">
     <div class="slide-content">
@@ -2860,7 +2956,7 @@ code, .mono {
           <span class="window-title">Visual Studio Code — ResourceBookingBackend</span>
         </div>
         <div class="window-content">
-          <div class="vscode-mockup">
+          <div class="vscode-mockup vsc-choreo">
 
             <!-- Activity Bar -->
             <div class="vscode-activity-bar">
@@ -2982,8 +3078,8 @@ code, .mono {
     </div>
   </section>
 
-  <!-- ── Slide 5: Repeated Instructions ─────────────────── -->
-  <section class="slide" data-scene="1" data-slide="5"
+  <!-- ── Slide 4: Repeated Instructions ─────────────────── -->
+  <section class="slide" data-scene="1" data-slide="4"
            data-title="Repeating Yourself"
            data-notes="'So you start repeating yourself.' Read each card slowly. Let frustration build. Punch line: 'By end of day, you're not coding. You're spoon-feeding.' Then reveal the time counter.">
     <div class="slide-content">
@@ -3034,8 +3130,8 @@ code, .mono {
     </div>
   </section>
 
-  <!-- ── Slide 6: Context Memory Decay ────────────────────── -->
-  <section class="slide" data-scene="1" data-slide="6"
+  <!-- ── Slide 5: Context Memory Decay ────────────────────── -->
+  <section class="slide" data-scene="1" data-slide="5"
            data-title="Context Leak"
            data-notes="'Here's the real problem.' Point to the panel. 'Watch what happens to its memory.' Let the animation play — items fade, bar shrinks, red crosses appear. 'It doesn't forget everything at once. It forgets gradually. And you don't notice until it's too late.'">
     <div class="slide-content">
@@ -3103,8 +3199,8 @@ code, .mono {
     </div>
   </section>
 
-  <!-- ── Slide 7: The Shift — "2025" ────────────────────── -->
-  <section class="slide" data-scene="1" data-slide="7"
+  <!-- ── Slide 6: The Shift — "2025" ────────────────────── -->
+  <section class="slide" data-scene="1" data-slide="6"
            data-title="2025"
            data-notes="Tone shift. Stand taller. 'Then something changed.' Pause. 'We stopped talking message by message. We gave it structure.'">
     <div class="slide-content">
@@ -3118,8 +3214,8 @@ code, .mono {
     </div>
   </section>
 
-  <!-- ── Slide 8: The Rules ─────────────────────────────── -->
-  <section class="slide" data-scene="1" data-slide="8"
+  <!-- ── Slide 7: The Rules ─────────────────────────────── -->
+  <section class="slide" data-scene="1" data-slide="7"
            data-title="The Rules"
            data-notes="'We wrote rules. Real rules.' Read each one with authority. These are your ACTUAL rules from the instruction file. Punch: 'We didn't ask it to remember. We made it impossible to forget.'">
     <div class="slide-content">
@@ -3174,8 +3270,8 @@ code, .mono {
     </div>
   </section>
 
-  <!-- ── Slide 9: The Workflow ──────────────────────────── -->
-  <section class="slide" data-scene="1" data-slide="9"
+  <!-- ── Slide 8: The Workflow ──────────────────────────── -->
+  <section class="slide" data-scene="1" data-slide="8"
            data-title="The Workflow"
            data-notes="'Then we built templates — for the entire workflow.' Point to each card. 'Write. Review. Build. Run. Fix. All structured. All repeatable.' Pause. 'And it worked.'">
     <div class="slide-content">
@@ -3236,8 +3332,8 @@ code, .mono {
     </div>
   </section>
 
-  <!-- ── Slide 10: Agent Writes Right ─────────────────── -->
-  <section class="slide" data-scene="1" data-slide="10"
+  <!-- ── Slide 9: Agent Writes Right ─────────────────── -->
+  <section class="slide" data-scene="1" data-slide="9"
            data-title="Agent Writes Right"
            data-notes="'Same project. Same ask.' Pause. 'But this time the agent has rules, conventions, structured workflow.' Watch the code appear line by line. 'import Testing. @Test. #expect with messages. AAA pattern.' Pause. 'First try. No corrections needed.'">
     <div class="slide-content">
@@ -3251,7 +3347,7 @@ code, .mono {
           <span class="window-title">Visual Studio Code — ResourceBookingBackend</span>
         </div>
         <div class="window-content">
-          <div class="vscode-mockup">
+          <div class="vscode-mockup vsc-choreo">
 
             <!-- Activity Bar -->
             <div class="vscode-activity-bar">
@@ -3359,8 +3455,8 @@ code, .mono {
     </div>
   </section>
 
-  <!-- ── Slide 11: The Proof — Xcode 23 Test Report ────────── -->
-  <section class="slide" data-scene="1" data-slide="11"
+  <!-- ── Slide 10: The Proof — Xcode 23 Test Report ────────── -->
+  <section class="slide" data-scene="1" data-slide="10"
            data-title="The Proof"
            data-notes="'You saw the demo. Resource Booking Backend.' Xcode 23 test report shows all green. The ring fills. Every test passes. 'Zero corrections. It followed every rule autonomously. First iteration.' Punch: 'From spoon-feeding to delegation.'">
     <div class="slide-content">
@@ -3523,8 +3619,8 @@ code, .mono {
     </div>
   </section>
 
-  <!-- ── Slide 12: Current Progress ──────────────────────── -->
-  <section class="slide" data-scene="1" data-slide="12"
+  <!-- ── Slide 11: Current Progress ──────────────────────── -->
+  <section class="slide" data-scene="1" data-slide="11"
            data-title="Current Progress"
            data-notes="'Right now, today, we're scaling outward. Same pattern. UI, Backend, Wiring — each piece follows structured context + intelligent agents + automated validation.'">
     <div class="slide-content">
@@ -3557,8 +3653,8 @@ code, .mono {
     </div>
   </section>
 
-  <!-- ── Slide 13: The Bridge Question ──────────────────── -->
-  <section class="slide" data-scene="1" data-slide="13"
+  <!-- ── Slide 12: The Bridge Question ──────────────────── -->
+  <section class="slide" data-scene="1" data-slide="12"
            data-title="The Question"
            data-notes="Your micro 'one more thing.' Let the slide appear silently. 2 full beats of silence. Then: 'What if the platform itself... understood your code?' Say it quietly — confidence, not volume.">
     <div class="slide-content">
@@ -3573,8 +3669,8 @@ code, .mono {
     </div>
   </section>
 
-  <!-- ── Slide 14: CodeLens Tease ───────────────────────── -->
-  <section class="slide" data-scene="1" data-slide="14"
+  <!-- ── Slide 13: CodeLens Tease ───────────────────────── -->
+  <section class="slide" data-scene="1" data-slide="13"
            data-title="CodeLens"
            data-notes="Quietly: 'That's what we built.' Let the logo glow. Ring orbits. Hold 3 seconds. Then advance to Scene 2.">
     <div class="slide-content">
@@ -3877,12 +3973,12 @@ code, .mono {
     const sl = slide.dataset.slide;
 
     // Context counter on bucket slide
-    if (sc === '1' && sl === '6') {
+    if (sc === '1' && sl === '5') {
       // Will be triggered by fragment reveal
     }
 
     // Workflow cards light up
-    if (sc === '1' && sl === '9') {
+    if (sc === '1' && sl === '8') {
       const cards = slide.querySelectorAll('.workflow-card');
       cards.forEach((card, i) => {
         card.classList.remove('lit');
@@ -3899,12 +3995,12 @@ code, .mono {
     const sl = slide.dataset.slide;
 
     // Context counter on bucket slide — triggered when fragment order=1 is revealed
-    if (sc === '1' && sl === '6' && step === 1) {
+    if (sc === '1' && sl === '5' && step === 1) {
       // No counter animation needed anymore — the CSS handles the memory decay
     }
 
-    // Time wasted counter — triggered on slide 5 fragment 1
-    if (sc === '1' && sl === '5' && step === 1) {
+    // Time wasted counter — triggered on slide 4 fragment 1
+    if (sc === '1' && sl === '4' && step === 1) {
       runTimeWastedAnimation();
     }
   }
